@@ -1,108 +1,87 @@
-# Simple Banking System (C Program)
 
-This is a basic console-based *Banking System* written in C that allows users to check balance, deposit money (credit), withdraw money (debit), and exit the application. It uses simple control structures, loops, and condition checking to simulate basic banking operations.
+README Template (Complete)
 
+📌 Abstract
 
-## 📌 Features
-
-- ✔ Check current account balance  
-- ✔ Deposit money (Credit function)  
-- ✔ Withdraw money (Debit function)  
-- ✔ Prevents withdrawal when balance is insufficient  
-- ✔ User-friendly menu-driven interface  
-- ✔ Input validation for incorrect or negative values  
+This project is a simple Credit–Debit Transaction System developed in C.
+It allows users to perform basic banking operations such as adding credit, making debit transactions, checking balance, and viewing transaction history.
+The program is designed to demonstrate the use of functions, file handling (optional), loops, and conditional statements in C programming.
 
 
+📌 Features of the Program
 
-## 📂 How the Program Works
+Add credit amount
 
-The program maintains a variable:
+Debit amount with validation
 
-float balance = 0.0;
+Check available balance
 
-The user can perform operations through a loop-based menu:
+Display previous transactions
 
-1. *Check Balance*  
-2. *Deposit Money*  
-3. *Withdraw Money*  
-4. *Exit Program*
+User-friendly menu-driven system
 
-Each operation is handled inside a switch statement.
+Data stored temporarily during runtime (or file storage if added)
 
 
-## 📝 Code Flow Summary
+📌 Technical Requirements
 
-### *Check Balance*
-Displays the current amount stored in the balance variable.
+Software:
 
-### *Deposit Money*
-- User enters an amount  
-- If amount > 0 → added to balance  
-- Otherwise → error message shown  
+Any C compiler (GCC, MinGW, Turbo C, CodeBlocks, etc.)
 
-### *Withdraw Money*
-- Checks if amount is positive  
-- Checks if sufficient balance exists  
-- Subtracts amount if valid  
-
-### *Exit*
-Stops the program and prints a goodbye message.
+A text editor (VS Code, Notepad++, CodeBlocks IDE)
 
 
-## 🚀 Running the Program
+Hardware:
 
-### *1. Compile the Program*
+Minimum 1GB RAM
 
-gcc bank.c -o bank
-
-### *2. Run the Program*
-
-./bank
+Any basic Windows/Linux/Mac system
 
 
-## 💻 Sample Output
+📌 Functional Requirements
 
-Welcome to Simple Banking System (INR)
+The system should allow the user to enter credit amount.
 
-Menu:
+The system should validate debit transactions (cannot withdraw more than balance).
 
-1. Check Balance
+Menu should repeat until the user exits the program.
 
+The program should correctly update balance after every transaction.
 
-2. Deposit Money (Credit)
-
-
-3. Withdraw Money (Debit)
+(Optional) Store transactions in a file.
 
 
-4. Exit Enter your choice: 1 Your current balance is: ₹0.00
+📌 How to Run the Program
+
+1. Download or clone the repository:
+
+git clone https://github.com/your-username/your-repo-name.git
+
+
+2. Navigate to the folder:
+
+cd your-repo-name
+
+
+3. Compile the C program:
+
+gcc transaction.c -o transaction
+
+
+4. Run the executable:
+
+./transaction
+
+or on Windows:
+
+transaction.exe
 
 
 
-## 🛠 Concepts Used
-
-- while(1) infinite loop  
-- switch-case  
-- Variables & user input  
-- Condition checking (if, else)  
-- Float operations  
 
 
-## 📘 Future Enhancements (Optional)
+📌 Author
 
-- Add transaction history  
-- Save balance in file (persistent storage)  
-- PIN/password login  
-- Multiple accounts  
-- ATM-style UI  
-
-
-## 📄 License
-
-This project is open-source and free to use under the *MIT License*.
-
-
-## 👨‍💻 Author
-
-Created by *Arsheen*
-Feel free to contribute or suggest improvements.
+Shaik Arsheen 
+GitHub: https://github.com/your-username
